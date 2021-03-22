@@ -5,12 +5,11 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
-  def show
-    set_student
+  def show    
   end
 
   def activate
-    set_student 
+    set_student
     @student.active = !@student.active
     @student.save 
   end 
